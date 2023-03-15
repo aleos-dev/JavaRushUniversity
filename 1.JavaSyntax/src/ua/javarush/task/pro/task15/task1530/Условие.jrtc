@@ -1,0 +1,13 @@
+taskKey="ua.javarush.task.pro.task15.task1530"\n\nБайти у символи
+
+У класі Solution створи публічний статичний метод bytesToChars(ByteArrayInputStream stream, int n), що повертає char[].
+Метод повинен зчитати n перших байт із stream і перетворити їх на масив символів.
+Повернений масив повинен мати довжину n або менше, якщо в потоці менше ніж n байт.
+Вважаємо, що кожен байт відповідає одному символу.
+
+
+Требования:
+1.	У класі Solution має бути створений метод public static char[] bytesToChars(ByteArrayInputStream stream, int n).
+2.	Метод bytesToChars повинен перетворити перші n байт із stream на символи та повернути їх у вигляді масиву.
+
+
