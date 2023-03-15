@@ -1,0 +1,27 @@
+﻿#############
+## Idea
+#############
+target/
+.idea/
+.idea
+.repository/
+*.iml
+*.iws
+*.jrtc
+*.java
+*.class
+*.info
+*.properties
+*.jar
+
+
+/lib/
+/out/
+/JavaRushPlugin.properties
+/Instruction.png
+/JR_M.iml
+/M_JavaRushPlugin.properties
+/Primary_JavaRushPlugin.properties
+/out.log
+/out.log.*
+/qodana.yaml
