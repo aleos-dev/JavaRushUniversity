@@ -1,0 +1,10 @@
+taskKey="ua.javarush.task.pro.task15.task1534"\n\nОбрізання файлу
+
+Реалізуй метод trimByPosition: він повинен обрізати файл, представлений каналом fileChannel, до його поточної позиції.
+
+
+Требования:
+1.	Метод trimByPosition повинен визначити поточну позицію fileChannel.
+2.	Метод trimByPosition повинен обрізати файл каналу fileChannel до поточної позиції.
+
+

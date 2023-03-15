@@ -1,0 +1,19 @@
+taskKey="ua.javarush.task.pro.task14.task1418"\n\nВласний виняток
+
+У методі getChildrenCount(Human) виникає NPE (NullPointerException), він малоінформативний.
+
+Створи виняток ChildrenNotInitializedException в окремому класі, успадкуй його від RuntimeException.
+Також створи конструктор у цьому класі з параметром типу String. Нехай конструктор виводить свій параметр на екран.
+
+Перехопи виняток NPE у блоці try-catch і викинь свій виняток ChildrenNotInitializedException,
+передавши в конструктор повідомлення &mdash; поле message.
+
+
+Требования:
+1.	Сигнатуру і тип значення, що повертається, методу getChildrenCount(Human) не змінюй.
+2.	Публічний класс ChildrenNotInitializedException має бути створений в окремому файлі та успадковуватися від класу RuntimeException.
+3.	У класі ChildrenNotInitializedException має бути створений конструктор із параметром типу String, який він виводить на екран.
+4.	Метод getChildrenCount має бути реалізований відповідно до умови.
+5.	Клас Human не змінюй.
+
+

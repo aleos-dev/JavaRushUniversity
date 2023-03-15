@@ -1,0 +1,17 @@
+taskKey="ua.javarush.task.pro.task09.task0914"\n\nОновлення шляху
+
+Реалізуй метод changePath(String, String) так, щоб він заміняв версію jdk у шляху, отриманому як перший параметр методу, на версію, отриману як другий параметр, і повертав новий шлях.
+Версія jdk починається з рядка &quot;jdk&quot; і закінчується символом &quot;/&quot;.
+
+Приклад:
+шлях &mdash; &quot;/usr/java/jdk1.8/bin&quot;
+версія jdk &mdash; &quot;jdk-13&quot;
+
+Метод changePath(шлях, версія jdk) має повернути шлях &mdash; &quot;/usr/java/jdk-13/bin&quot;.
+Метод main() у тестуванні не використовується.
+
+
+Требования:
+1.	Потрібно реалізувати метод changePath(String, String) згідно з умовою.
+
+

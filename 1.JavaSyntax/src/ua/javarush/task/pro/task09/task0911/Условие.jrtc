@@ -1,0 +1,20 @@
+taskKey="ua.javarush.task.pro.task09.task0911"\n\nПривітання
+
+Ініціалізуй статичні змінні такими значеннями:
+- partyFace &mdash; &quot;\uD83E\uDD73&quot;
+- balloon &mdash; &quot;\uD83C\uDF88&quot;
+- gift &mdash; &quot;\uD83C\uDF81&quot;
+- partyPopper &mdash; &quot;\uD83C\uDF89&quot;
+- cake &mdash; &quot;\uD83C\uDF82&quot;
+
+Щоб переглянути привітання, запусти метод main().
+
+
+Требования:
+1.	Змінна partyFace під час оголошення має бути ініціалізована значенням &quot;\uD83E\uDD73&quot;.
+2.	Змінна balloon під час оголошення має бути ініціалізована значенням &quot;\uD83C\uDF88&quot;.
+3.	Змінна gift під час оголошення має бути ініціалізована значенням &quot;\uD83C\uDF81&quot;.
+4.	Змінна partyPopper під час оголошення має бути ініціалізована значенням &quot;\uD83C\uDF89&quot;.
+5.	Змінна cake під час оголошення має бути ініціалізована значенням &quot;\uD83C\uDF82&quot;.
+
+

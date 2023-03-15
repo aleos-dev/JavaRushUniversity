@@ -1,0 +1,11 @@
+taskKey="ua.javarush.task.pro.task13.task1325"\n\nТелефонна книга
+
+Реалізуй метод getContactsStartsWith(TreeMap&lt;String, String&gt;, String), який повинен повернути частину телефонної книги,
+отриманої першим параметром, прізвище/ім&rsquo;я яких починається на певну послідовність символів, отриману другим параметром.
+
+
+Требования:
+1.	Сигнатуру і тип значення, що повертається, методу getContactsStartsWith(TreeMap&lt;String, String&gt;, String) не змінюй.
+2.	Метод getContactsStartsWith має бути реалізований відповідно до умови.
+
+
