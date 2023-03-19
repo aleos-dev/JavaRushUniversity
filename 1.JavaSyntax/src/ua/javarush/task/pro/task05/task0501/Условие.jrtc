@@ -1,0 +1,10 @@
+taskKey="ua.javarush.task.pro.task05.task0501"\n\nСтворюємо масиви
+
+У методі main проініціалізуй змінні intArray і doubleArray масивами відповідних типів розміром 10.
+
+
+Требования:
+1.	У методі main(String[]) проініціалізуй змінну intArray згідно з умовою.
+2.	У методі main(String[]) проініціалізуй змінну doubleArray згідно з умовою.
+
+

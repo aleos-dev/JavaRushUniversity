@@ -1,0 +1,13 @@
+taskKey="ua.javarush.task.pro.task05.task0504"\n\nОб'єднуємо масиви
+
+Реалізувати метод main(String[]), який має скопіювати вміст масивів firstArray і secondArray в один масив resultArray.
+Масив firstArray має бути розташований на початку нового масиву resultArray, а secondArray &mdash; після першого.
+
+
+Требования:
+1.	У класі Solution має бути публічна статична змінна firstArray типу int[], проініціалізована масивом з 10 значеннями.
+2.	У класі Solution має бути публічна статична змінна secondArray типу int[], проініціалізована масивом з 10 значеннями.
+3.	У класі Solution має бути публічна статична змінна resultArray типу int[].
+4.	Реалізуй метод main(String[]) згідно з умовою.
+
+

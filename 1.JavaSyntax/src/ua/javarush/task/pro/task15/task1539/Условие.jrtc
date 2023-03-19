@@ -1,0 +1,12 @@
+taskKey="ua.javarush.task.pro.task15.task1539"\n\nВикористання Paths 2
+
+Реалізуй метод joinToPath, який повинен об&rsquo;єднати всі частини шляху зі списку partsList в один шлях і повернути його.
+Для створення повного шляху використовуй метод Paths.get(String first, String... more).
+Не передавай у Paths.get порожні рядки.
+
+
+Требования:
+1.	Метод joinToPath повинен повернути шлях, що складається з частин зі списку partsList.
+2.	Метод joinToPath повинен використовувати метод Paths.get (String first, String ... more), передавши в нього всі елементи списку.
+
+

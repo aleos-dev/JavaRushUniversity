@@ -1,0 +1,21 @@
+taskKey="ua.javarush.task.pro.task09.task0909"\n\nЕкранування символів
+
+Виведи на екран цей текст у два рядки:
+It&#39;s a Windows path: &quot;C:\Program Files\Java\jdk-13.0.0\bin&quot;
+It&#39;s a Java string: \&quot;C:\\Program Files\\Java\\jdk-13.0.0\\bin\&quot;
+
+Підказка:
+\&quot; &mdash; екранування подвійних лапок;
+\\ &mdash; екранування оберненої скісної риски (\).
+
+Детально про екранування символів та Escape-послідовності в мові Java читай у статті &quot;Екранування символів у Java&quot;:
+https://javarush.ru/groups/posts/614-----ehkranirovanie-simvolov-v-java
+
+
+Требования:
+1.	Програма має виводити текст.
+2.	Текст має бути виведено у два рядки.
+3.	Текст першого рядка має бути таким: It&#39;s a Windows path: &quot;C:\Program Files\Java\jdk-13.0.0\bin&quot;
+4.	Текст другого рядка має бути таким: It&#39;s a Java string: \&quot;C:\\Program Files\\Java\\jdk-13.0.0\\bin\&quot;
+
+

@@ -1,0 +1,12 @@
+taskKey="ua.javarush.task.pro.task05.task0513"\n\nВиводимо масиви
+
+Реалізуй метод main(String[]), який виводить масиви strings і ints у консоль за допомогою методу Arrays.toString().
+
+
+Требования:
+1.	У класі Solution має бути публічна статична змінна strings типу String[].
+2.	У класі Solution має бути публічна статична змінна ints типу int[].
+3.	У методі main(String[]) виведи в консоль масив strings за допомогою методу Arrays.toString(Object[]).
+4.	У методі main(String[]) виведи в консоль масив ints за допомогою методу Arrays.toString(int[]).
+
+
