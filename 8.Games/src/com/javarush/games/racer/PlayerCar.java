@@ -17,7 +17,7 @@ public class PlayerCar extends GameObject {
         } else if (x > RoadManager.RIGHT_BORDER - width) {
                 x = RoadManager.RIGHT_BORDER - width;
         }
-
+        
         if (direction == Direction.LEFT) {
                 x--;
         } else if (direction == Direction.RIGHT) {
