@@ -19,7 +19,7 @@ public class RacerGame extends Game {
 
     private void createGame() {
         roadMarking = new RoadMarking();
-        player =  new PlayerCar();
+        player = new PlayerCar();
         drawScene();
         setTurnTimer(40);
     }
@@ -56,11 +56,31 @@ public class RacerGame extends Game {
 
     private void moveAll() {
         roadMarking.move(player.speed);
+        player.move();
     }
 
     @Override
     public void onTurn(int step) {
         moveAll();
         drawScene();
+    }
+
+    @Override
+    public void onKeyPress(Key key) {
+        if (key == Key.RIGHT) {
+            player.setDirection(Direction.RIGHT);
+        }
+        if (key == Key.LEFT) {
+            player.setDirection(Direction.LEFT);
+        }
+    }
+    @Override
+    public void onKeyReleased(Key key) {
+        if(key == Key.RIGHT && player.getDirection() == Direction.RIGHT) {
+            player.setDirection(Direction.NONE);
+        }
+        if(key == Key.LEFT && player.getDirection() == Direction.LEFT) {
+            player.setDirection(Direction.NONE);
+        }
     }
 }

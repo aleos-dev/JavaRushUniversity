@@ -4,12 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import java.util.Scanner;
-
-/* 
-Підсумовування
-*/
-
+//Підсумовування
 public class Solution {
     public static void main(String[] args) throws IOException {
         //напишіть тут ваш код
@@ -28,3 +23,4 @@ public class Solution {
 
     }
 }
+
