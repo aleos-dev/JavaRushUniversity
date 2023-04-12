@@ -15,6 +15,38 @@ public class RoadManager {
 
     private List<RoadObject> items = new ArrayList<>();
 
+    public void generateNewRoadObjects(Game game) {
+        generateThorn(game);
+    }
+
+    private void generateThorn(Game game) {
+        if (game.getRandomNumber(100) < 10 && !isThornExists()) {
+            addRoadObject(RoadObjectType.THORN, game);
+        }
+    }
+
+    private boolean isThornExists() {
+        for (RoadObject roadObject : items) {
+            if (roadObject.type == RoadObjectType.THORN) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public void draw(Game game) {
+        for (RoadObject roadObject : items) {
+            roadObject.draw(game);
+        }
+    }
+
+    public void move(int boost) {
+        for (RoadObject roadObject : items) {
+            roadObject.move(boost + roadObject.speed);
+        }
+    }
+
     private RoadObject createRoadObject(RoadObjectType type, int x, int y) {
         if (type == RoadObjectType.THORN) {
             return new Thorn(x, y);
