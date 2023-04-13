@@ -1,9 +1,11 @@
 package com.javarush.games.racer.road;
 
 import com.javarush.engine.cell.Game;
+import com.javarush.games.racer.PlayerCar;
 import com.javarush.games.racer.RacerGame;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class RoadManager {
@@ -45,7 +47,28 @@ public class RoadManager {
         for (RoadObject roadObject : items) {
             roadObject.move(boost + roadObject.speed);
         }
+        deletePassedItems();
     }
+
+    public boolean checkCrush(PlayerCar car) {
+        for (RoadObject item : items) {
+            if (item.isCollision(car)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void deletePassedItems() {
+        Iterator iterator = items.iterator();
+        while (iterator.hasNext()) {
+            RoadObject roadObject = (RoadObject) iterator.next();
+            if (roadObject.y >= RacerGame.HEIGHT) {
+                iterator.remove();
+            }
+        }
+    }
+
 
     private RoadObject createRoadObject(RoadObjectType type, int x, int y) {
         if (type == RoadObjectType.THORN) {
@@ -62,4 +85,5 @@ public class RoadManager {
             items.add(object);
         }
     }
+
 }
