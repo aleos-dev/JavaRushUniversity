@@ -2,6 +2,7 @@ package com.javarush.games.racer;
 
 import com.javarush.engine.cell.*;
 import com.javarush.games.racer.road.RoadManager;
+import com.javarush.games.racer.road.RoadObject;
 
 public class RacerGame extends Game {
     public static final int WIDTH = 64;
@@ -19,6 +20,7 @@ public class RacerGame extends Game {
         setScreenSize(WIDTH, HEIGHT);
         createGame();
     }
+
 
     private void createGame() {
         roadMarking = new RoadMarking();
@@ -101,12 +103,13 @@ public class RacerGame extends Game {
             player.setDirection(Direction.LEFT);
         }
     }
+
     @Override
     public void onKeyReleased(Key key) {
-        if(key == Key.RIGHT && player.getDirection() == Direction.RIGHT) {
+        if (key == Key.RIGHT && player.getDirection() == Direction.RIGHT) {
             player.setDirection(Direction.NONE);
         }
-        if(key == Key.LEFT && player.getDirection() == Direction.LEFT) {
+        if (key == Key.LEFT && player.getDirection() == Direction.LEFT) {
             player.setDirection(Direction.NONE);
         }
     }
