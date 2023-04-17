@@ -5,6 +5,7 @@ import com.javarush.games.racer.PlayerCar;
 import com.javarush.games.racer.RacerGame;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class RoadManager {
@@ -14,6 +15,7 @@ public class RoadManager {
     private static final int FIRST_LANE_POSITION = 16;
     private static final int FOURTH_LANE_POSITION = 44;
     private static final int PLAYER_CAR_DISTANCE = 12;
+    private int passedCarsCount;
 
     private List<RoadObject> items = new ArrayList<>();
 
@@ -70,7 +72,13 @@ public class RoadManager {
     }
 
     private void deletePassedItems() {
-        items.removeIf(roadObject -> roadObject.y >= RacerGame.HEIGHT);
+        Iterator<RoadObject> iter = items.iterator();
+        while(iter.hasNext()) {
+            RoadObject obj = iter.next();
+            if (obj.y >= RacerGame.HEIGHT && obj.type != RoadObjectType.THORN) {
+                passedCarsCount++;
+            }
+        }
     }
 
 
@@ -116,6 +124,10 @@ public class RoadManager {
             }
         }
         return true;
+    }
+
+    public int getPassedCarsCount() {
+        return passedCarsCount;
     }
 
 }
