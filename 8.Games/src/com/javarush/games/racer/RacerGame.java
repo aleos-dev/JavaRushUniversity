@@ -1,8 +1,9 @@
 package com.javarush.games.racer;
 
-import com.javarush.engine.cell.*;
+import com.javarush.engine.cell.Color;
+import com.javarush.engine.cell.Game;
+import com.javarush.engine.cell.Key;
 import com.javarush.games.racer.road.RoadManager;
-import com.javarush.games.racer.road.RoadObject;
 
 public class RacerGame extends Game {
     public static final int WIDTH = 64;
@@ -15,6 +16,7 @@ public class RacerGame extends Game {
     private PlayerCar player;
     private boolean isGameStopped;
     private FinishLine finishLine;
+    private ProgressBar progressBar;
 
     @Override
     public void initialize() {
@@ -30,12 +32,14 @@ public class RacerGame extends Game {
         player = new PlayerCar();
         isGameStopped = false;
         finishLine = new FinishLine();
+        progressBar = new ProgressBar(RACE_GOAL_CARS_COUNT);
         drawScene();
         setTurnTimer(40);
     }
 
     private void drawScene() {
         drawField();
+        progressBar.draw(this);
         roadMarking.draw(this);
         roadManager.draw(this);
         player.draw(this);
@@ -78,6 +82,7 @@ public class RacerGame extends Game {
         roadManager.move(player.speed);
         player.move();
         finishLine.move(player.speed);
+        progressBar.move(roadManager.getPassedCarsCount());
     }
 
     @Override
@@ -89,8 +94,13 @@ public class RacerGame extends Game {
             if (roadManager.getPassedCarsCount() >= RACE_GOAL_CARS_COUNT) {
                 finishLine.show();
             }
-            moveAll();
-            roadManager.generateNewRoadObjects(this);
+            if (finishLine.isCrossed(player)) {
+                win();
+
+            } else {
+                moveAll();
+                roadManager.generateNewRoadObjects(this);
+            }
             drawScene();
         }
 
@@ -121,5 +131,11 @@ public class RacerGame extends Game {
         if (key == Key.LEFT && player.getDirection() == Direction.LEFT) {
             player.setDirection(Direction.NONE);
         }
+    }
+
+    private void win() {
+        isGameStopped = true;
+        showMessageDialog(Color.BLACK, "YOU WIN", Color.GREEN, 75);
+        stopTurnTimer();
     }
 }
