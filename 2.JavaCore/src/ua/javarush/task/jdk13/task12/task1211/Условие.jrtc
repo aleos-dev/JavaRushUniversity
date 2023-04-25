@@ -1,0 +1,14 @@
+taskKey="ua.javarush.task.jdk13.task12.task1211"\n\nInt та Integer
+
+Реалізуй два методи: print(int) та print(Integer).
+Напиши такий код у методі main(), щоб викликалися обидва.
+
+
+Требования:
+1.	Клас Solution має містити статичний метод main().
+2.	Клас Solution має містити статичний void метод print() з параметром типу int.
+3.	Клас Solution має містити статичний void метод print() з параметром типу Integer.
+4.	Метод main() має викликати метод print() з параметром типу int.
+5.	Метод main() має викликати метод print() з параметром типу Integer.
+
+
