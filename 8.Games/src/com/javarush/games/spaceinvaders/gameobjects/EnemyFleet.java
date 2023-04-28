@@ -3,16 +3,19 @@ package com.javarush.games.spaceinvaders.gameobjects;
 import com.javarush.engine.cell.Game;
 import com.javarush.games.spaceinvaders.Direction;
 import com.javarush.games.spaceinvaders.ShapeMatrix;
+import com.javarush.games.spaceinvaders.SpaceInvadersGame;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.javarush.games.spaceinvaders.Direction.*;
 
 public class EnemyFleet {
     private static final int ROWS_COUNT = 3;
     private static final int COLUMNS_COUNT = 10;
     private static final int STEP = ShapeMatrix.ENEMY.length + 1;
     private List<EnemyShip> ships;
-    private Direction direction = Direction.RIGHT;
+    private Direction direction = RIGHT;
 
     public EnemyFleet() {
         createShips();
@@ -25,7 +28,33 @@ public class EnemyFleet {
     }
 
     public void move() {
+        if (ships.isEmpty()) return;
 
+        Direction shipDirection = DOWN;
+        if (direction == LEFT && getLeftBorder() < 0) {
+            direction = RIGHT;
+        } else if (direction == RIGHT && getRightBorder() > SpaceInvadersGame.WIDTH) {
+            direction = LEFT;
+        } else {
+            shipDirection = direction;
+        }
+
+        for (Ship ship : ships) {
+            ship.move(shipDirection, getSpeed());
+        }
+
+    }
+
+    public Bullet fire(Game game)
+    {
+        if (ships.isEmpty()) return null;
+
+        int rnd = game.getRandomNumber(100 / SpaceInvadersGame.COMPLEXITY);
+        if (rnd > 0) return null;
+
+        int index = game.getRandomNumber(ships.size());
+        
+        return ships.get(index).fire();
     }
 
     private double getLeftBorder() {

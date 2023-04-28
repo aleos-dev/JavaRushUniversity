@@ -1,0 +1,14 @@
+taskKey="ua.javarush.task.jdk13.task11.task1101"\n\nКінь та Пегас
+
+Відредагуй два класи &mdash; Horse (кінь) та Pegasus (пегас).
+Успадкуй пегаса від коня.
+
+
+Требования:
+1.	У класі Solution має бути клас Horse (кінь).
+2.	Клас Horse має бути public.
+3.	У класі Solution має бути клас Pegasus (пегас).
+4.	Клас Pegasus має бути public.
+5.	Клас Pegasus має бути успадкований від класу Horse.
+
+

@@ -1,0 +1,17 @@
+taskKey="ua.javarush.task.jdk13.task13.task1301"\n\nПиво
+
+У цьому завданні тобі потрібно:
+1. Подумати, який з двох інтерфейсів потрібно реалізувати в класі BeerLover.
+2. Додати до класу BeerLover цей інтерфейс і реалізувати всі його методи.
+3. Подумати, як пов&#39;язані змінна READY_TO_GO_HOME та метод isReadyToGoHome.
+4. Повернути значення змінної READY_TO_GO_HOME у методі isReadyToGoHome.
+
+
+Требования:
+1.	Клас BeerLover має реалізувати(implements) інтерфейс Alcoholic.
+2.	Клас BeerLover не повинен реалізувати інтерфейс Drinker напряму (лише опосередковано - через Alcoholic)
+3.	У класі BeerLover мають бути реалізовані всі методи інтерфейсу Alcoholic.
+4.	У класі BeerLover мають бути реалізовані всі методи інтерфейсу Drinker.
+5.	Метод isReadyToGoHome має повертати значення змінної READY_TO_GO_HOME.
+
+
