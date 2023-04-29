@@ -5,7 +5,7 @@ import com.javarush.games.spaceinvaders.ShapeMatrix;
 
 import static com.javarush.games.spaceinvaders.Direction.UP;
 
-public class Bullet extends GameObject{
+public class Bullet extends GameObject {
 
     private int dy;
     public boolean isAlive = true;
@@ -19,6 +19,10 @@ public class Bullet extends GameObject{
 
     public void move() {
         y += dy;
+    }
+
+    public void kill() {
+        isAlive = false;
     }
 
 
