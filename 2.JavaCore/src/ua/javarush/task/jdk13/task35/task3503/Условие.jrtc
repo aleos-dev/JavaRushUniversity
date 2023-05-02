@@ -1,0 +1,15 @@
+taskKey="ua.javarush.task.jdk13.task35.task3503"\n\nДекілька суперкласів для дженерика
+
+Є клас Solution, який параметризировано T.
+Обмежте параметр T.
+T повинен бути нащадком класу ClassForGenerics і одночасно реалізувати інтерфейс InterfaceForGenerics.
+Змінювати можна лише клас Solution.
+
+
+Требования:
+1.	Клас Solution має бути параметризировано типом, який є нащадком класу ClassForGenerics і одночасно реалізувати інтерфейс InterfaceForGenerics.
+2.	Інтерфейс InterfaceForGenerics не має розширяти інші інтерфейси.
+3.	Клас ClassForGenerics не повинен підтримувати інтерфейс InterfaceForGenerics.
+4.	Клас Solution не має бути нащадком класу ClassForGenerics.
+
+

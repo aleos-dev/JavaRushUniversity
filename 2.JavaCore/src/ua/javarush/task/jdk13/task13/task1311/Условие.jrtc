@@ -1,0 +1,12 @@
+taskKey="ua.javarush.task.jdk13.task13.task1311"\n\nІнтерфейс Updatable у класі Screen
+
+Реалізуй інтерфейс Updatable у класі Screen.
+
+
+Требования:
+1.	Інтерфейс Updatable має успадковувати (extends) інтерфейс Selectable.
+2.	Клас Screen має реалізувати (implements) інтерфейс Updatable.
+3.	У класі Screen потрібно реалізувати метод onSelect інтерфейсу Selectable.
+4.	У класі Screen потрібно реалізувати метод refresh інтерфейсу Updatable.
+
+

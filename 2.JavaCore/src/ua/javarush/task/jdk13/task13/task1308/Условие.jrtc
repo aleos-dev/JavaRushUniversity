@@ -1,0 +1,14 @@
+taskKey="ua.javarush.task.jdk13.task13.task1308"\n\nThe weather is fine
+
+Реалізуй у класі Today інтерфейс Weather.
+Подумай, як пов&#39;язаний параметр type з методом getWeatherType().
+Зверни увагу, що інтерфейси Weather та WeatherType вже реалізовані в окремих файлах.
+
+
+Требования:
+1.	Інтерфейс Weather потрібно реалізувати в класі Today.
+2.	У класі Today потрібно реалізувати метод getWeatherType, який оголошено в інтерфейсі Weather.
+3.	Тип значення, що повертається, методу getWeatherType має бути String.
+4.	Метод getWeatherType має повертати значення змінної type.
+
+

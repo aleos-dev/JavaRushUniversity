@@ -1,0 +1,14 @@
+taskKey="ua.javarush.task.jdk13.task13.task1306"\n\nМайбутній керівник
+
+Додай інтерфейси Secretary та Boss до класів Manager та Subordinate. По одному на кожний. Подумай, кому який.
+Успадкуй інтерфейси Secretary та Boss від інтерфейсів Person та HasManagementPotential так,
+щоб усі методи у класів Manager та Subordinate були оголошені в якомусь інтерфейсі.
+
+
+Требования:
+1.	Клас Manager повинен реалізувати інтерфейс, який йому підходить (Secretary або Boss).
+2.	Клас Subordinate повинен реалізувати інтерфейс, який йому підходить (Secretary або Boss).
+3.	Секретар (Secretary) є людиною (Person).
+4.	Начальник (Boss) є людиною (Person), яка може змусити інших сумлінно працювати (HasManagementPotential).
+
+
