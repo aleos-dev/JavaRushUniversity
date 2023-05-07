@@ -12,7 +12,7 @@ import java.io.IOException;
 public class Solution {
     public static int[][] array = new int[3][3];
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[]kargs) throws IOException {
         //напишіть тут ваш код
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
