@@ -1,0 +1,18 @@
+taskKey="ua.javarush.task.jdk13.task14.task1403"\n\nBuilding и School
+
+У цьому завданні тобі потрібно:
+1. Правильно розставити успадкування між Building (будівля) та School (будівля школи).
+2. Подумати, об&#39;єкт якого класу мають повертати методи getSchool та getBuilding.
+3. Змінити null на об&#39;єкт класу Building або School.
+
+Сигнатури методів getSchool() та getBuilding() не змінюй.
+
+
+Требования:
+1.	Клас School має успадкуватися від класу Building.
+2.	Метод getSchool() має повертати нову школу (School).
+3.	Метод getBuilding() має повертати нову будівлю (Building).
+4.	Клас School має бути статичним.
+5.	Клас Building має бути статичним.
+
+

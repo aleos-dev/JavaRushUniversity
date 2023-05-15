@@ -1,0 +1,12 @@
+taskKey="ua.javarush.task.jdk13.task14.task1401"\n\nBingo!
+
+Виправ рядок &#39;Object animal = new Pet();&#39; у методі main() таким чином, щоб програма вивела &quot;Bingo!&quot;.
+
+
+Требования:
+1.	Клас Cat має успадковуватися від класу Pet.
+2.	Клас Tiger має успадковуватися від класу Cat.
+3.	У змінній Object animal має зберігатися об&#39;єкт, який буде одночасно і Pet, і Cat, і Tiger.
+4.	Програма має виводити на екран: &quot;Bingo!&quot;.
+
+
