@@ -1,0 +1,24 @@
+taskKey="ua.javarush.task.jdk13.task15.task1510"\n\nСтатики й винятки
+
+У статичному блоці класу Solution напиши код, виконання якого призведе до появи винятку.
+У результаті клас не завантажиться, і замість значення змінної B з&#39;явиться повідомлення про помилку:
+
+Exception in thread &quot;main&quot; java.lang.ExceptionInInitializerError
+at java.lang.Class.forName0(Native Method)
+at java.lang.Class.forName(Class.java:186)
+at com.intellij.rt.execution.application.AppMain.main(AppMain.java:113)
+Caused by: java.lang.RuntimeException:
+at ua.rush.task.jdk13.task15.task1510.Solution.&lt;clinit&gt;(Solution.java:22)
+
+Hint: Потрібно погуглити причину, якщо сталося таке:
+java: initializer must be able to complete normally
+java: unreachable statement
+
+
+Требования:
+1.	У класі Solution у статичному блоці має виникати виняток (Exception).
+2.	Програма не має виводити на екран нічого, окрім автоматичного повідомлення про виняток.
+3.	Програма не повинна зчитувати дані з клавіатури.
+4.	Клас Solution має бути public.
+
+

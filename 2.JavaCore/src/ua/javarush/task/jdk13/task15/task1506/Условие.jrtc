@@ -1,0 +1,13 @@
+taskKey="ua.javarush.task.jdk13.task15.task1506"\n\nМаксимально простий код-2
+
+Спрости код &mdash; видали всі конструктори та виклики конструкторів суперкласів, які автоматично додаються при компіляції.
+Взаємозв&#39;язок між об&#39;єктами класів NakedCat та NormalCat, SiamCat &mdash; Is-a: https://en.wikipedia.org/wiki/Is-a
+
+
+Требования:
+1.	Клас NormalCat повинен бути нащадком класу NakedCat.
+2.	Клас SiamCat повинен бути нащадком класу NormalCat.
+3.	Спрости код класу NakedCat.
+4.	Спрости код класу NormalCat.
+
+

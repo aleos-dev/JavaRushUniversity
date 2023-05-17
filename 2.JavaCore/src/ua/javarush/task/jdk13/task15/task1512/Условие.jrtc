@@ -1,0 +1,25 @@
+taskKey="ua.javarush.task.jdk13.task15.task1512"\n\nПорядок завантаження змінних
+
+Розберися, що та в якій послідовності ініціалізується в цій програмі, а потім:
+1. Постав брейкпоінти та використовуй дебагер.
+2. Виправ порядок ініціалізації даних таким, щоб результат був таким:
+static void init()
+Static block
+public static void main
+Non-static block
+static void printAllFields
+0
+null
+Solution constructor
+static void printAllFields
+6
+First name
+
+
+Требования:
+1.	Програма має виводити дані на екран.
+2.	Виведення на екран має відповідати умові задачі.
+3.	Результатом роботи статичного ініціалізатора класу Solution має бути виведення на екран рядків &quot;static void init()&quot; і &quot;Static block&quot;.
+4.	Програма не повинна зчитувати дані з клавіатури.
+
+

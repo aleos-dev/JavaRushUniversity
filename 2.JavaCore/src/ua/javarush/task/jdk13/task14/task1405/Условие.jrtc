@@ -1,0 +1,19 @@
+taskKey="ua.javarush.task.jdk13.task14.task1405"\n\nЧас поїсти
+
+Давай напишемо програму, яка допоможе тобі обрати, що з&#39;їсти на обід.
+Для цього потрібно:
+1. Реалізувати інтерфейс Selectable у класі Food.
+2. Метод onSelect() має виводити на екран фразу &quot;The food was selected&quot;.
+3. Подумай, які методи можна викликати для змінної food, а які для &mdash; selectable.
+4. У методі callFoodMethods викличи методи onSelect, onEat, якщо це можливо.
+5. У методі callSelectableMethods викличи методи onSelect, onEat, якщо це можливо.
+6. Не використовуй явне приведення типів.
+
+
+Требования:
+1.	Інтерфейс Selectable має бути реалізованим у класі Food.
+2.	Метод onSelect() у класі Food має виводити на екран фразу &quot;The food was selected&quot;.
+3.	У методі callFoodMethods повинні викликатися методи об&#39;єкту типу Food.
+4.	У методі callSelectableMethods мають викликатися методи, доступні в будь-якого об&#39;єкта, що реалізує інтерфейс Selectable.
+
+

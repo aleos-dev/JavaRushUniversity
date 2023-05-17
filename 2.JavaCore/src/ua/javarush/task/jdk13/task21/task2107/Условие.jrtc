@@ -1,0 +1,24 @@
+taskKey="ua.javarush.task.jdk13.task21.task2107"\n\nAutoCloseable і try-with-resources
+
+У класі FakeConnection реалізуй інтерфейс AutoCloseable, щоб об&#39;єкти цього типу можна було використовувати у try-with-resources.
+Метод close() має виводити на екран фразу &quot;Closing database connection...&quot;
+У блоці try послідовно викличи методи usefulOperation() та unsupportedOperation().
+
+Виведення на екран повинне бути таким:
+Establishing database connection...
+Entering body of try block.
+Executing useful operation.
+Operation is not supported yet!
+Closing database connection...
+
+Зверни увагу, що ресурси звільнилися автоматично, незважаючи на виняток, що кинуто методом unsupportedOperation.
+
+
+Требования:
+1.	Клас FakeConnection повинен підтримувати інтерфейс AutoCloseable.
+2.	Метод close класу FakeConnection має виводити на екран фразу &quot;Closing database connection...&quot;.
+3.	У методі main класу Solution потрібно викликати методи usefulOperation та unsupportedOperation в об&#39;єкту класу FakeConnection.
+4.	Виведення на екран має бути відповідним до того, що вказане в умові завдання.
+5.	Метод close класу FakeConnection не повинен викликатися явно.
+
+

@@ -1,0 +1,13 @@
+taskKey="ua.javarush.task.jdk13.task15.task1505"\n\nМаксимально простий код-1
+
+Спрости код: прибери всі успадкування та реалізації, які автоматично додаються при компіляції.
+Взаємозв&#39;язок між об&#39;єктами me та zapp &mdash; Has-a: https://uk.wikipedia.org/wiki/Has-a
+
+
+Требования:
+1.	Інтерфейс SpecificSerializable повинен розширювати (extends) інтерфейс Serializable.
+2.	Клас JavaDev повинен реалізувати інтерфейс SpecificSerializable.
+3.	У коді не має бути явного успадкування від Object (extends Object).
+4.	Клас JuniorJavaDev не повинен явно успадковувати інтерфейс SpecificSerializable.
+
+

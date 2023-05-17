@@ -1,0 +1,13 @@
+taskKey="ua.javarush.task.jdk13.task21.task2106"\n\nЗвільняємо ресурси
+
+Реалізуй метод finalize, продумай заздалегідь, що саме повинно бути в ньому.
+Проведи рефакторинг методу getUsers згідно з java7 try-with-resources.
+
+
+Требования:
+1.	Метод finalize у класі Solution повинен містити виклик super.finalize().
+2.	Метод finalize у класі Solution повинен коректно завершуватися у випадку, коли значення поля connection дорівнює null.
+3.	Метод finalize у класі Solution повинен закривати поточне з&#39;єднання, якщо значення поля connection не дорівнює null.
+4.	Метод getUsers повинен коректно використовувати try-with-resources.
+
+
