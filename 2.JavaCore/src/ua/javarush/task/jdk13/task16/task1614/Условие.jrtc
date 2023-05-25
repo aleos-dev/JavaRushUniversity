@@ -1,0 +1,15 @@
+taskKey="ua.javarush.task.jdk13.task16.task1614"\n\nВиведення стек-трейсу
+
+1. Створити таск (public static клас SpecialThread, який реалізує інтерфейс Runnable).
+2. SpecialThread має виводити в консолі свій стек-трейс.
+
+Підказка: main thread вже виводить у консолі свій стек-трейс.
+
+
+Требования:
+1.	Додай до класу Solution публічний статичний клас SpecialThread.
+2.	Клас SpecialThread не має бути успадкований від якогось додаткового класу.
+3.	Клас SpecialThread має реалізувати інтерфейс Runnable.
+4.	Метод run класу SpecialThread повинен виводити свій стек-трейс.
+
+

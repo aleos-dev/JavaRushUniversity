@@ -1,0 +1,16 @@
+taskKey="ua.javarush.task.jdk13.task16.task1612"\n\nMy second thread
+
+1. Створити public static клас TestThread, який успадковано від Thread.
+2. Створити статік блок всередині TestThread, який виводить в консолі &quot;it&#39;s a static block inside TestThread&quot;.
+3. Метод run має виводити в консолі &quot;it&#39;s a run method&quot;.
+
+
+Требования:
+1.	Додай до класу Solution публічний статичний клас TestThread.
+2.	Клас TestThread потрібно успадкувати від класу Thread.
+3.	Клас TestThread має реалізовувати будь-які додаткові інтерфейси.
+4.	Створити статік блок всередині TestThread, який виводить в консолі &quot;it&#39;s a static block inside TestThread&quot;.
+5.	Метод run класу TestThread має виводити &quot;it&#39;s a run method&quot;.
+6.	Метод main не змінюй.
+
+
