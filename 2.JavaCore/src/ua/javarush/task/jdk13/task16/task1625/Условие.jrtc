@@ -1,0 +1,14 @@
+taskKey="ua.javarush.task.jdk13.task16.task1625"\n\nЗнову interrupt
+
+Створи потік TestThread.
+У методі main створи екземпляр потоку, запусти, а потім перерви його за допомогою методу interrupt().
+
+
+Требования:
+1.	Клас TestThread потрібно успадкувати від Thread.
+2.	Клас TestThread повинен мати public void метод run.
+3.	Метод main повинен створювати об&#39;єкт типу TestThread.
+4.	Метод main повинен викликати метод start в об&#39;єкта типу TestThread.
+5.	Метод main повинен викликати метод interrupt в об&#39;єкта типу TestThread.
+
+
