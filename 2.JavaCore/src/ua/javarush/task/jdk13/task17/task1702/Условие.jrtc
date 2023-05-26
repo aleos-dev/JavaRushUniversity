@@ -1,0 +1,14 @@
+taskKey="ua.javarush.task.jdk13.task17.task1702"\n\nРазом швидше? Зараз перевіримо :)
+
+1. Розберися, що та як працює.
+2. Створи public static потік SortThread,
+який в методі run відсортує статичний масив testArray за допомогою методу sort.
+
+
+Требования:
+1.	Клас Solution повинен містити public static клас SortThread.
+2.	Клас SortThread має бути потоком.
+3.	У методі run класу SortThread має викликати метод sort() з параметром testArray.
+4.	Програма повинна виводити текст на екран.
+
+

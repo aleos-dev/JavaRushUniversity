@@ -16,7 +16,7 @@ public class Solution {
     private static void waiting() {
         // напишіть тут ваш код
         try {
-            Thread.sleep(1000);
+            Thread.sleep(100);
         } catch (InterruptedException ignore) {
 
         }
@@ -26,7 +26,7 @@ public class Solution {
     private static void takingOff() {
         // виправ цей метод
         try {
-            Thread.sleep(1000);
+            Thread.sleep(100);
         } catch (InterruptedException ignore) {
         }
     }

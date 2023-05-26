@@ -15,7 +15,7 @@ public class Solution {
     }
 
     public int fibonacci(int n) {
-        if (n == 1 || n == 0) {
+        if (n == 1 || n == 2) {
             return 1;
         }
 
