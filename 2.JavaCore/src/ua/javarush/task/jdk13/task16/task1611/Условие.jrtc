@@ -1,0 +1,14 @@
+taskKey="ua.javarush.task.jdk13.task16.task1611"\n\nMy first thread
+
+Створити public static class TestThread - потік з інтерфейсом Runnable.
+TestThread має виводити в консолі &quot;My first thread&quot;.
+
+
+Требования:
+1.	Додай до класу Solution публічний статичний клас TestThread.
+2.	Клас TestThread має реалізувати інтерфейс Runnable.
+3.	Метод run класу TestThread має виводити &quot;My first thread&quot;.
+4.	Програма має вивести &quot;My first thread&quot;.
+5.	Метод main не змінюй.
+
+
