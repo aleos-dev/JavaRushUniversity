@@ -1,0 +1,24 @@
+taskKey="ua.javarush.task.jdk13.task16.task1616"\n\njoin: у потрібний час у потрібному місці
+
+Подумай, в якому місці та для якого об&#39;єкту потрібно викликати метод join,
+щоб результат виводився по порядку спочатку для firstThread, а потім для secondThread.
+Виклич метод join у потрібному місці.
+
+Приклад виведення:
+firstThread : String 1
+firstThread : String 2
+...
+firstThread : String 19
+firstThread : String 20
+secondThread : String 1
+...
+secondThread : String 20
+
+
+Требования:
+1.	Метод main має викликати метод join для об&#39;єкта firstThread.
+2.	Метод main не має викликати метод join для об&#39;єкта secondThread.
+3.	Метод main не має викликати System.out.println() або System.out.print().
+4.	Виведення програми має бути ідентичним прикладу із завдання.
+
+

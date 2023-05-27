@@ -1,0 +1,13 @@
+taskKey="ua.javarush.task.jdk13.task17.task1709"\n\nПропозиції
+
+Без використання synchronized зроби так, щоб кількість зроблених та прийнятих пропозицій була однаковою.
+
+
+Требования:
+1.	Клас Solution повинен містити потік MakeProposal.
+2.	Клас Solution повинен містити потік AcceptProposal.
+3.	Клас Solution повинен містити публічну статичну змінну int proposal.
+4.	Програма не повинна містити synchronized методів чи synchronized блоків.
+5.	Змінна int proposal не повинна знаходитися в локальному кеші.
+
+
