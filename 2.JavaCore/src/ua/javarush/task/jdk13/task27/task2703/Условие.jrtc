@@ -1,0 +1,12 @@
+taskKey="ua.javarush.task.jdk13.task27.task2703"\n\nДругий варіант deadlock
+
+У методі secondMethod розстав synchronized блоки таким чином, щоб при використанні класу Solution потоками з&#39;являвся deadlock.
+
+
+Требования:
+1.	У методі secondMethod має бути синхронізований блок по об&#39;єкту lock.
+2.	У методі secondMethod має бути вкладений синхронізований блок по об&#39;єкту this.
+3.	Поле lock має бути приватним.
+4.	Метод secondMethod не має бути оголошений з модифікатором synchronized.
+
+
