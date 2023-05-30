@@ -1,0 +1,18 @@
+taskKey="ua.javarush.task.jdk13.task28.task2805"\n\nБагатопотоковий факторіал
+
+Перетвори програму таким чином, щоб вона обчислювала факторіал у паралельному потоці:
+- додай класу CalculateFactorial реалізацію інтерфейсу Callable&lt;Long&gt;;
+- метод calculate перероби в call, а замість параметра number створи в CalculateFactorial поле number;
+- до класу CalculateFactorial додай конструктор з одним параметром Long який ініціалізує поле number.
+У класі Solution є код, який повинен працювати з оновленим класом CalculateFactorial.
+
+Можеш розкоментувати його та перевірити роботу програми.
+
+
+Требования:
+1.	Клас CalculateFactorial повинен реалізувати інтерфейс Callable&lt;Long&gt; та його метод call.
+2.	Тіло методу call має залишитися таким самим, яким було в методі calculate.
+3.	У класі CalculateFactorial має бути приватне не статичне поле number.
+4.	У класі CalculateFactorial має бути конструктор, який ініціалізує поле number.
+
+

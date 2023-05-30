@@ -1,0 +1,16 @@
+taskKey="ua.javarush.task.jdk13.task28.task2802"\n\nThreadLocalRandom
+
+Клас Solution буде використовуватися тредами.
+Реалізуй логіку всіх методів, використовуй клас ThreadLocalRandom.
+getRandomIntegerBetweenNumbers повинен повертати випадковий int між from та to.
+getRandomDouble повинен повертати випадковий double.
+getRandomLongBetween0AndN повинен повертати випадковий long між 0 і n.
+
+
+Требования:
+1.	У класі Solution повинні бути лише статичні методи.
+2.	Метод getRandomIntegerBetweenNumbers за допомогою ThreadLocalRandom повинен повертати випадковий int [from..to].
+3.	Метод getRandomDouble за допомогою ThreadLocalRandom повинен повертати випадковий double [0..1).
+4.	Метод getRandomLongBetween0AndN за допомогою ThreadLocalRandom повинен повертати випадковий long [0..n].
+
+

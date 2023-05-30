@@ -23,7 +23,7 @@ public class Solution {
             fruits.add(index, fruit);
         }
 
-        public synchronized void removerFruit(int index) {
+        public synchronized void removeFruit(int index) {
             fruits.remove(index);
         }
 

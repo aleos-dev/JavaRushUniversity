@@ -15,21 +15,17 @@ public class Solution {
         return field;
     }
 
-    public void sout(Solution solution) {
-        synchronized (field) {
-            System.out.format("111:  %s: %s %n", this.field, solution.getField());
-            synchronized (this) {
-                solution.sout2(this);
-            }
+    public synchronized void sout(Solution solution) {
+        System.out.format("111:  %s: %s %n", this.field, solution.getField());
+        synchronized (this) {
+            solution.sout2(this);
         }
     }
 
-    public void sout2(Solution solution) {
-        synchronized (this) {
-            System.out.format("222:  %s: %s %n", this.field, solution.getField());
-            synchronized (field) {
-                solution.sout(this);
-            }
+    public synchronized void sout2(Solution solution) {
+        System.out.format("222:  %s: %s %n", this.field, solution.getField());
+        synchronized (field) {
+            solution.sout(this);
         }
     }
 

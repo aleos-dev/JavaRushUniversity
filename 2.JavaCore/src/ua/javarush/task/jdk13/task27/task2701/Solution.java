@@ -7,9 +7,9 @@ package ua.javarush.task.jdk13.task27.task2701;
 public class Solution {
     public static void main(String[] args) {
         final Friend alphonse =
-                new Friend("Alphonse");
+                new Fri1("Alphonse");
         final Friend gaston =
-                new Friend("Gaston");
+                new Fri1("Gaston");
         new Thread(new Runnable() {
             public void run() {
                 alphonse.bow(gaston);
@@ -22,7 +22,7 @@ public class Solution {
         }).start();
     }
 
-    static class Friend {
+    abstract static class Friend {
         private final String name;
 
         public Friend(String name) {
@@ -44,6 +44,15 @@ public class Solution {
             System.out.format("%s: %s"
                               + " bowed back to me!%n",
                     this.name, bower.getName());
+        }
+
+
+    }
+
+    static class Fri1 extends Friend {
+
+        public Fri1(String name) {
+            super(name);
         }
     }
 }

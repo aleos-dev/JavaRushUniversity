@@ -1,0 +1,15 @@
+taskKey="ua.javarush.task.jdk13.task27.task2707"\n\nРозстав wait-notify
+
+Розстав wait-notify.
+
+Приклад виведення:
+Thread-0 MailServer received: [Person [Thread-1] wrote an email &#39;AAA&#39;] in 1001 ms after start
+
+
+Требования:
+1.	Об&#39;єкти класу MailServer повинні працювати коректно у багатопотоковому середовищі.
+2.	Об&#39;єкти класу Person повинні працювати коректно у багатопотоковому середовищі.
+3.	У методі run класу MailServer має бути synchronized блок, монітор - mail.
+4.	У методі run класу Person має бути synchronized блок, монітор - mail.
+
+
