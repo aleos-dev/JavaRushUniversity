@@ -1,0 +1,14 @@
+taskKey="ua.javarush.task.jdk13.task28.task2806"\n\nПаралельний парсинг
+
+Преретвори програму, скориставшись інтерфейсом Callable замість Runnable:
+- у класі ParseLinkTask заміни інтерфейс Runnable на Callable&lt;Link&gt;;
+- метод run переназви в call;
+- видали поле link та його геттер, а замість нього в методі call створи, заповни та поверни локальну змінну типу Link.
+
+
+Требования:
+1.	Клас ParseLinkTask повинен реалізувати інтерфейс Callable&lt;Link&gt; і його метод call.
+2.	У класі ParseLinkTask не повинно бути поля link і методу getLink.
+3.	Метод call повинен повертати об&#39;єкт Link, сформований на основі рядка line.
+
+
