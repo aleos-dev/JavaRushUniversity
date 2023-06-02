@@ -1,0 +1,23 @@
+taskKey="ua.javarush.task.jdk13.task28.task2812"\n\nShutdownNow!
+
+Розберися, в чому відмінність методів shutdown і shutdownNow. Виведи список усіх незавершених завдань на екран.
+
+Має вийти щось типу:
+
+pool-1-thread-1, localId=1
+pool-1-thread-2, localId=2
+pool-1-thread-3, localId=3
+pool-1-thread-4, localId=4
+pool-1-thread-5, localId=5
+java.util.concurrent.FutureTask@7e6cbb7a... was not completed
+java.util.concurrent.FutureTask@7c3df479... was not completed
+java.util.concurrent.FutureTask@7106e68e... was not completed
+java.util.concurrent.FutureTask@7eda2dbb... was not completed
+java.util.concurrent.FutureTask@6576fe71... was not completed
+
+
+Требования:
+1.	У методі main класу Solution потрібно викликати метод shutdownNow на об&#39;єкті executor.
+2.	У методі main класу Solution на екран потрібно вивести всі завдання, які не встиг виконати executor.
+
+

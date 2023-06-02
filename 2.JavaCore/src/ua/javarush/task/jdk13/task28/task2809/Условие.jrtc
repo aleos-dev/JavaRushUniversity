@@ -1,0 +1,13 @@
+taskKey="ua.javarush.task.jdk13.task28.task2809"\n\nБагатопотоковість в одному потоці
+
+Тобі потрібно модифікувати програму за допомогою використання newSingleThreadExecutor замість створення new Thread().
+Для цього тобі потрібно створити ExecutorService, використати його метод submit(Callable) замість new Thread(),
+а в кінці не забути його зупинити.
+
+
+Требования:
+1.	У класі Solution має бути публічне статичне поле executorService, ініціалізоване за допомогою методу newSingleThreadExecutor.
+2.	У методі startPlaying створення new Thread() потрібно замінити на виклик методу submit(Callable) сервісу executorService.
+3.	Сервіс executorService потрібно зупинити в кінці методу main за допомогою методу shutdown.
+
+
