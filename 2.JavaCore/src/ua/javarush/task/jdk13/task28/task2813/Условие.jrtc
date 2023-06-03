@@ -1,0 +1,15 @@
+taskKey="ua.javarush.task.jdk13.task28.task2813"\n\nКешування потоків
+
+У методі main ініціалізуй поле executorService за допомогою методу newCachedThreadPool.
+Реалізуй методи submitProducers і submitConsumers. У методі submitProducers додай до сервісу executorService сто завдань Producer.
+До всіх конструкторів Producer передай різні рядки.
+У методі submitConsumers додай до сервісу executorService сто завдань Consumer. Оскільки у Consumer нема стану (нема полів),
+використовуй один об&#39;єкт Consumer 100 разів.
+
+
+Требования:
+1.	Поле executorService потрібно ініціалізувати в методі main за допомогою методу newCachedThreadPool.
+2.	Метод submitProducers має додати до executorService сто завдань типу Producer.
+3.	Метод submitConsumers має додати до executorService сто завдань типу Consumer.
+
+
