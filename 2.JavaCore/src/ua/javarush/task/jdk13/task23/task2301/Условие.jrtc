@@ -1,0 +1,14 @@
+taskKey="ua.javarush.task.jdk13.task23.task2301"\n\nInner
+
+Реалізувати метод getTwoSolutions, який маж повертати масив з 2-х экземплярів класу Solution.
+Для кожного екземпляра класу Solution ініціалізувати поле innerClasses двома значеннями.
+Ініціалізація всіх даних має відбуватися лише в методі getTwoSolutions.
+
+
+Требования:
+1.	У класі Solution потрібно реалізувати метод getTwoSolutions.
+2.	Метод getTwoSolutions має бути статичним.
+3.	Метод getTwoSolutions має бути публічним.
+4.	Метод getTwoSolutions має повертати масив типу Solution, який заповнено відповідно до умов завдання.
+
+
