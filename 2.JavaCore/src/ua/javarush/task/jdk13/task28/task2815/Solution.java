@@ -32,7 +32,8 @@ public class Solution {
 
         //напишіть тут ваш код
         for (int i = 0; i < maxProdBulbs; i++) {
-            QUEUE.add("Bulb-" + i);
+            // just with i as index can't go through validator :(
+            QUEUE.add("Bulb-" + rnd.nextInt(1000));
         }
 
     }

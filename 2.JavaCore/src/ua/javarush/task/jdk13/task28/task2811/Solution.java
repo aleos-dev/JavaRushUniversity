@@ -13,9 +13,9 @@ public class Solution {
         //напишіть тут ваш код
         ExecutorService service = Executors.newFixedThreadPool(5);
 
-        for (int i = 1; i <= 20; i++) {
+        for (int i = 1; i < 21; i++) {
             final int index = i;
-            service.execute(() -> doExpensiveOperation(index));
+            service.submit(() -> doExpensiveOperation(index));
         }
 
         service.shutdown();

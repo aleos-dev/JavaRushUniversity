@@ -3,6 +3,7 @@ package ua.javarush.task.jdk13.task28.task2808;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.FutureTask;
+import java.util.concurrent.TimeUnit;
 
 /* 
 Мені не встигнути
@@ -27,23 +28,15 @@ public class Solution {
     }
 
     public static List<String> completeConcert(List<FutureTask<String>> taskList) {
-        //напишіть тут ваш код
-        try {
-            Thread.sleep(800);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
-        List<String> completedTasks = new ArrayList<>();
-
-        taskList.forEach(task -> {
-            if (task.isDone()) {
-                completedTasks.add(task.resultNow());
-            } else {
+        List<String> result = new ArrayList<>();
+        for (FutureTask<String> task : taskList) {
+              try {
+                result.add(task.get(800, TimeUnit.MILLISECONDS));
+            } catch (Exception e) {
                 task.cancel(true);
             }
-        });
+        }
 
-        return completedTasks;
+        return result;
     }
 }

@@ -19,9 +19,12 @@ public class Task implements Callable<String> {
         Thread.sleep(new Random().nextInt(20));
 
         // combine previous result and letter
-        String result = future.get() + letter;
-        System.out.println(result);
+//        String result = future.get() + letter;
+//        System.out.println(result);
+//
+//        return result;
 
-        return result;
+        System.out.println(future.get() + letter);
+        return future.get() + letter;
     }
 }

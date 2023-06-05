@@ -1,9 +1,6 @@
 package ua.javarush.task.jdk13.task28.task2818;
 
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledFuture;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /* 
 З ScheduledExecutor галактикою
@@ -15,7 +12,10 @@ public class Solution {
 
     public static void main(String[] args) throws Exception {
         //напишіть тут ваш код
-        scheduledPool.schedule(new TheUltimateQuestion(), 365 * (long) 7.5E6, TimeUnit.DAYS);
+        Future<Integer> future  = scheduledPool.schedule(new TheUltimateQuestion(),
+                365 * (long) 7.5E6, TimeUnit.DAYS);
+
+        System.out.println(future.get());
 
         scheduledPool.shutdown();
     }
