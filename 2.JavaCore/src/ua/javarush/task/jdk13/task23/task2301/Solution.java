@@ -15,8 +15,10 @@ public class Solution {
 
         Solution[] sol = new Solution[2];
 
+        sol[0] = new Solution();
         sol[0].innerClasses[0] = new InnerClass();
         sol[0].innerClasses[1] = new InnerClass();
+        sol[1] = new Solution();
         sol[1].innerClasses[0] = new InnerClass();
         sol[1].innerClasses[1] = new InnerClass();
 
