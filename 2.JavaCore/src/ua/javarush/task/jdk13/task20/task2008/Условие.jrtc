@@ -1,0 +1,21 @@
+taskKey="ua.javarush.task.jdk13.task20.task2008"\n\nСеріалізація зоопарку
+
+НЕОБХІДНО: підключені бібліотеки jackson-databind та jackson-dataformat-yaml версії 2.13.1.
+
+Зроби так, щоб при серіалізації об&#39;єкта типу Zoo кожному елементу списку animals додався
+тип (lion для класу Lion, penguin для класу Penguin).
+Приклад:
+- !&lt;lion&gt;
+name: &quot;Алекс&quot;
+roarVolume: 5.5
+- !&lt;penguin&gt;
+name: &quot;Шкіпер&quot;
+age: 8
+
+
+Требования:
+1.	Клас Zoo.Animal потрібно позначити анотацією @JsonTypeInfo.
+2.	Клас Zoo.Animal потрібно позначити анотацією @JsonSubTypes.
+3.	При серіалізацїї в YAML усім об&#39;єктам списку animals потрібно додати тип і зберегти основний формат.
+
+
