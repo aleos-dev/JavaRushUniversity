@@ -1,0 +1,18 @@
+taskKey="ua.javarush.task.jdk13.task38.task3803"\n\nОбробка анотацій
+
+У класі Solution необхідно реалізувати найпростішу обробку анотацій.
+
+У методі printFullyQualifiedNames() і printValues() приходить клас. Якщо цей клас позначено анотацією PrepareMyTest,
+необхідно вивести на екран fullyQualifiedNames і values у відповідних методах та повернути true.
+Якщо ж анотація PrepareMyTest відсутня - повернути false.
+
+Для виведення на екран класів з масиву value використовуй скорочене ім&#39;я (getSimpleName).
+
+
+Требования:
+1.	Метод printFullyQualifiedNames() має повертати false у випадку, якщо клас, що передається як параметр, не позначено анотацією @PrepareMyTest.
+2.	Метод printValues() має повертати false у випадку, якщо клас, що передається як параметр, не позначено анотацією @PrepareMyTest.
+3.	Метод printFullyQualifiedNames() має виводити на екран усі елементи масиву fullyQualifiedNames та повертати true, якщо отриманий клас позначено анотацією @PrepareMyTest.
+4.	Метод printValues() має виводити на екран усі елементи масиву value за допомогою використання їх скорочених імен і повертати true, якщо отриманий клас позначено анотацією @PrepareMyTest.
+
+
