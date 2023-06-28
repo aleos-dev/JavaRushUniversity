@@ -22,7 +22,8 @@ public class Solution {
         //напишіть тут ваш код
         Set<Type> result = new HashSet<>();
 
-        if (type instanceof ParameterizedType pt) {
+        if (type instanceof ParameterizedType) {
+            ParameterizedType pt = (ParameterizedType) type;
             result.add(pt.getRawType());
 
             for (Type t: pt.getActualTypeArguments()) {

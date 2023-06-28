@@ -6,10 +6,10 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.TYPE, ElementType.ANNOTATION_TYPE})
+@Target({ElementType.TYPE})
 public @interface Ticket {
     Priority priority() default Priority.MEDIUM;
-    String[] tags();
+    String[] tags() default {};
     String createdBy() default "Amigo";
     enum Priority {
         LOW,

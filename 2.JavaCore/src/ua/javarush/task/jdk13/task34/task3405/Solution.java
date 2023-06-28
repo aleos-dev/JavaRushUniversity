@@ -23,8 +23,10 @@ public class Solution {
         //напишіть тут ваш код
         Map<String, Object> resultMap = new HashMap<>();
         for (Field field: object.getClass().getDeclaredFields()) {
-            field.setAccessible(true);
-            resultMap.put(field.getName(), field.get(object));
+            if (Modifier.isPrivate(field.getModifiers())) {
+                field.setAccessible(true);
+                resultMap.put(field.getName(), field.get(object));
+            }
         }
 
         return resultMap;
