@@ -29,11 +29,18 @@ public class Solution {
 
     public static List<String> completeConcert(List<FutureTask<String>> taskList) {
         List<String> result = new ArrayList<>();
+        String name;
+        int count = 1;
         for (FutureTask<String> task : taskList) {
-              try {
-                result.add(task.get(800, TimeUnit.MILLISECONDS));
+            try {
+                System.out.println(count + ": " + System.currentTimeMillis() / 1000);
+                name = task.get(8000, TimeUnit.MILLISECONDS);
+                result.add(name);
+                System.out.println(count++ + ": " + System.currentTimeMillis() / 1000);
             } catch (Exception e) {
+                System.out.println(count++ + ": " + System.currentTimeMillis() / 1000 + " is cancelled");
                 task.cancel(true);
+
             }
         }
 

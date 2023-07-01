@@ -13,10 +13,17 @@ public class MusicalInstrument implements Callable<String> {
 
     @Override
     public String call() throws Exception {
-        int random = ThreadLocalRandom.current().nextInt(2000);
+        int random = ThreadLocalRandom.current().nextInt(20000);
         System.out.println("Починає грати: " + name + ". Тривалість: " + random + "ms");
-        Thread.sleep(random);
-        System.out.println(name + " закінчує грати");
-        return name;
+        try {
+            Thread.sleep(random);
+            System.out.println(name + " закінчує грати");
+            return name;
+        }
+        catch (InterruptedException e) {
+            System.out.println(name + " catch InterruptedException");
+            }
+
+        return name + "after interrupt";
     }
 }
